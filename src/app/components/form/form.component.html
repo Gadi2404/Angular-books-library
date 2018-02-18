@@ -1,0 +1,24 @@
+<form #appForm="ngForm" (ngSubmit)="onSubmit($event)">
+    <div class="formGroup">
+        <label>Title</label>
+        <input #title="ngModel" type="text" class="form-control" name="title" [(ngModel)]="model.title" required>
+        <div [hidden]="title.valid || title.pristine"class="alert alert-danger">Title is required</div>
+    </div>
+
+    <div class="formGroup">
+        <label>Author</label>
+        <input #author="ngModel" type="text" class="form-control" name="author" [(ngModel)]="model.author" required>
+        <div [hidden]="author.valid || author.pristine"class="alert alert-danger">Author is required</div>
+    </div>
+
+    <div class="formGroup">
+        <label>Date</label>
+        <input #date="ngModel" type="text" class="form-control" name="date" [(ngModel)]="model.date" required>
+        <div [hidden]="date.valid || date.pristine"class="alert alert-danger">Date is required</div>
+    </div>
+
+    <div class="form-footer">
+        <button type="button" class="btn btn-secondary" (click)="onFormClose()">Close</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!appForm.form.valid || appForm.form.pristine">Confirm</button>
+    </div>
+</form>

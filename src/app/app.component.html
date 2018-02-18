@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app" *ngIf="isDataLoaded;else loading_template">
+    <h1 class="appTitle">Books Library</h1>
+
+    <div class="appSummary">
+        <span class="booksTotal">There is a total of {{ bookListData.length }} books in the library</span>
+        <button class="btn btn-primary addBookBtn" (click)="onAddBookBtnClick()">Add a book</button>
+    </div>
+
+    <app-table *ngIf="bookListData.length;else noBooks" [bookList]="bookListData" (onBookListDataUpdate)="handelBookListDataUpdate($event)"></app-table>
+    <app-modal></app-modal>
+</div>
+
+<ng-template #loading_template>
+    <span class="loading"></span>
+</ng-template>
+
+<ng-template #noBooks>
+    <div class="noBooksToDisplay">No books to display</div>
+</ng-template>

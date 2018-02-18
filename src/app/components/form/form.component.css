@@ -1,0 +1,38 @@
+.formGroup{
+    position: relative;
+    margin-top: 10px;
+}
+
+.formGroup:first-child{
+    margin-top: 0;
+}
+
+.alert{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.form-footer{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.form-footer > :not(:last-child){
+    margin-right: 5px;
+}
+
+.ng-valid[required],
+.ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

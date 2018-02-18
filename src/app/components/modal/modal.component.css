@@ -1,0 +1,34 @@
+.modal{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    display: block;
+    pointer-events: none;
+}
+
+.modal.show{
+    pointer-events: auto;
+}
+
+.modal-dialog,
+.modal-content{
+    pointer-events: inherit;
+}
+
+.modal .modal-title{
+    text-transform: capitalize;
+}
+
+.modal .imageView{
+    max-height: calc(100vh - 215px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal .field{
+    margin-bottom: 5px;
+}
+
+.modal .field label{
+    display: inline-block;
+    margin-bottom: 5px;
+}

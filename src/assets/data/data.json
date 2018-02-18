@@ -1,0 +1,50 @@
+[
+    {
+        "title":"Eloquent JavaScript, Second Edition",
+        "author":"Marijn Haverbeke",
+        "date":"2014-12-14",
+        "image":"https://www.safaribooksonline.com/library/view/eloquent-javascript-2nd/9781457189821/orm_front_cover.jpg"
+    },
+    {
+        "title":"Learning JavaScript Design Patterns",
+        "author":"Addy Osmani",
+        "date":"2012-07-01",
+        "image":"https://addyosmani.com/resources/essentialjsdesignpatterns/cover/cover.jpg"
+    },
+    {
+        "title":"Speaking JavaScript",
+        "author":"Axel Rauschmayer",
+        "date":"2014-02-01",
+        "image":"https://d188rgcu4zozwl.cloudfront.net/content/B00INES03O/images/cover.jpg"
+    },
+    {
+        "title":"Programming JavaScript Applications",
+        "author":"Eric Elliott",
+        "date":"2014-07-01",
+        "image":"https://covers.oreillystatic.com/images/0636920033141/lrg.jpg"
+    },
+    {
+        "title":"Understanding ECMAScript 6",
+        "author":"Nicholas C. Zakas",
+        "date":"2016-09-03",
+        "image":"https://s3.amazonaws.com/titlepages.leanpub.com/understandinges6/hero?1489281135"
+    },
+    {
+        "title":"You Don't Know JS",
+        "author":"Kyle Simpson",
+        "date":"2015-12-27",
+        "image":"https://covers.oreillystatic.com/images/0636920033769/lrg.jpg"
+    },
+    {
+        "title":"Git Pocket Guide",
+        "author":"Richard E. Silverman",
+        "date":"2013-08-02",
+        "image":"https://covers.oreillystatic.com/images/0636920024972/lrg.jpg"
+    },
+    {
+        "title":"Designing Evolvable Web APIs with ASP.NET",
+        "author":"Glenn Block, et al.",
+        "date":"2014-04-07",
+        "image":"http://orm-other.s3.amazonaws.com/designevolvewebapisplash/designevolvecover.jpg"
+    }
+]

@@ -1,0 +1,30 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Book Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Date of release</th>
+            <th scope="col">Image</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let book of bookList">
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.date }}</td>
+            <td>
+                <img src="{{book.image}}" (click)="onImageClick(book)" />
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="onEditBookClick(book)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="onDeleteBookClick(book)">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
