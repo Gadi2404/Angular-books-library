@@ -13,8 +13,8 @@
 
     <div class="formGroup">
         <label>Date</label>
-        <input #date="ngModel" type="text" class="form-control" name="date" [(ngModel)]="model.date" required>
-        <div [hidden]="date.valid || date.pristine"class="alert alert-danger">Date is required</div>
+        <input #date="ngModel" type="date" class="form-control" name="date" [(ngModel)]="model.date" required>
+        <div [hidden]="date.valid || date.pristine"class="alert alert-danger" [innerText]="">Date is required</div>
     </div>
 
     <div class="form-footer">

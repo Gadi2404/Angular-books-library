@@ -57,13 +57,12 @@ export class FormComponent implements OnInit {
 
 }
 
-
 class Book {
   constructor(
     public title: string = '',
     public author: string = '',
     public date: string = '',
-    public image: string = '',
+    public image: string = 'https://islandpress.org/sites/default/files/400px%20x%20600px-r01BookNotPictured.jpg',
     public id: string = ''
   ) {  }
 }

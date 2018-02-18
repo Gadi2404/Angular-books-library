@@ -50,7 +50,7 @@ export class AppComponent {
             let index = this.bookListData.findIndex(bookData => (bookData.title.toLowerCase() === book.title.toLowerCase()) && (bookData.author.toLowerCase() === book.author.toLowerCase()));
 
             if( index != -1 )
-                return console.warn('the book already exists in the list!')
+                return console.warn('this book already exists in the list!')
 
             this.bookListData = this.bookListData.concat(book);
         }
